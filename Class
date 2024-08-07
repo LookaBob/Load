@@ -1,0 +1,13 @@
+Библиотека Load.h
+Класс Load для управления нагрузкой 
+
+Конструктор:
+Load(	int pin, 
+			typeLoad		  tLoad = typeLoad::Relay,
+			unsigned long	maxTime = 24*60*60*1000,	// 24*60*60*1000 - сутки;
+			String			  name = "",					//2023-06 new
+			unsigned int  adressMH = 0, //NULL,			
+			unsigned int  timeUpload = 10*60*1000,	// 10*60*1000 - 10минут, как часто обнавляем инфо в епром в милисекундах
+			int				    maxT = 15,					// максимальный уровень триака
+			int				    minT = 110					// минимальнй уровень триака
+		)  
